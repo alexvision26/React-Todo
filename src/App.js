@@ -2,6 +2,8 @@ import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
 
+import './index.css';
+
 const todoList = [
   {
     task: 'Organize Garage',
@@ -63,7 +65,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h2>Welcome to your Todo App!</h2>
+        <h1>Your Simple To-Do List!</h1>
         <TodoList todoList={this.state.todoList} toggleItem={this.toggleItem} clearCompleted={this.clearCompleted}/>
         <TodoForm addNewTask={this.addNewTask} />
       </div>

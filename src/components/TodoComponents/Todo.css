@@ -1,3 +1,4 @@
-.item.completed p {
+.item.completed {
     text-decoration: line-through;
+    background-color: rgb(216, 216, 118);
 }
